@@ -1,0 +1,17 @@
+
+/********BUTTON STYLES********/
+
+.button {
+	display: inline-block;
+	padding: 6px 12px;
+	background-color: #3197D6;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 4px;
+}
+
+
+ a:hover {
+	text-decoration: none;
+}
