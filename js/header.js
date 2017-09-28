@@ -19,3 +19,24 @@ function getRandomColor(){
 logoCircle.onclick = function(){
 	changeColor();
 }
+
+var $leftTriangle = $(".triangle-left");
+var $rightTriangle = $(".triangle-right");
+var $mainContainer = $("#main");
+var triangleAspectRatio = 350.0 / 1500.0;
+ResizeTriangles();
+
+$(window).on("resize", function(){
+	ResizeTriangles();
+});
+
+function ResizeTriangles()
+{
+	var $doc = $(document);
+	var triangleWidth = $doc.width();
+	var triangleHeight = triangleWidth * triangleAspectRatio;
+	
+	$leftTriangle.css({ "border-right-width": triangleWidth, "border-bottom-width": triangleHeight });
+	$rightTriangle.css({ "border-left-width": triangleWidth, "border-bottom-width": triangleHeight, "top": -triangleHeight });
+	$mainContainer.css({ "margin-top": -triangleHeight });
+}
