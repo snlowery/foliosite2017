@@ -16,8 +16,11 @@ function getRandomColor(){
 	}
 }
 
-logoCircle.onclick = function(){
-	changeColor();
+if (logoCircle != null)
+{
+	logoCircle.onclick = function(){
+		changeColor();
+	}	
 }
 
 var $leftTriangle = $(".triangle-left");
