@@ -698,7 +698,7 @@ a:hover {
 	width: 0;
 	height: 0;
 	border-bottom: 350px solid #212121;
-	border-left: 1200px solid transparent;
+	border-left: 3840px solid transparent;
 	float:right;
 	top: -350px;
 	position: relative;
@@ -709,7 +709,7 @@ a:hover {
 	width: 0;
 	height: 0;
 	border-bottom: 350px solid #0c0c0c;
-	border-right: 1200px solid transparent;
+	border-right: 3840px solid transparent;
 	float: left;
 	position: relative;
 
@@ -838,18 +838,26 @@ a:hover {
 
 /* Extra small devices (phones, up to 480px) */
 @media screen and (max-width: 767px) {
-.logo-circle {
-	height: 9em;
-	width: 9em;
+	.logo-circle {
+		height: 9em;
+		width: 9em;
 	} 
 	
-#project-info  {
-	padding: 0;
-	margin-top: -100px;
+	#project-info  {
+		padding: 0;
 	}
-.skill-img {
-	width: 30%;
-}
+	
+	.skill-img {
+		width: 30%;
+	}
+	
+	.navbar ul {
+		background-color: #FFFFFF;
+	}
+	
+	.nav-link-alt {
+		color: #000 !important;
+	}
 } 
 
 /* Small devices (tablets, 768px and up) */
